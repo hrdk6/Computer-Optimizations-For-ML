@@ -1,0 +1,8 @@
+[   18732ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://127.0.0.1:8765/assets/img/gemm.jpg:0
+[   20569ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://127.0.0.1:8765/assets/img/resnet.jpg:0
+[   24178ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://127.0.0.1:8765/assets/img/accel.jpg:0
+[   26013ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://127.0.0.1:8765/assets/img/sparse.jpg:0
+[   31498ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://127.0.0.1:8765/assets/img/kvblocks.jpg:0
+[   33267ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://127.0.0.1:8765/assets/img/serving.jpg:0
+[   35063ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://127.0.0.1:8765/assets/img/checkpoint.jpg:0
+[   42334ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://127.0.0.1:8765/assets/img/profile.jpg:0
