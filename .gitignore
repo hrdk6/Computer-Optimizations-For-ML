@@ -1,0 +1,33 @@
+# Lecture slides & course documents
+*.pdf
+*.ppt
+*.pptx
+*.doc
+*.docx
+
+# Screenshots & media dumps
+shots/
+Screenshot *.png
+*.png
+!study-site/assets/**
+
+# Course notes & raw text files
+/Computer system optimizations for ML.txt
+
+# Tooling, test runs, and MCP outputs
+.playwright-mcp/
+.claude/
+.vscode/
+.idea/
+*.log
+
+# Deployment & dependencies
+.vercel/
+node_modules/
+.env
+.env*.local
+
+# OS metadata
+.DS_Store
+Thumbs.db
+desktop.ini
