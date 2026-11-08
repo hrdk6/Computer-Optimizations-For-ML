@@ -184,6 +184,7 @@ CSO.register({
   <path d="M400 80 C 440 80, 430 209, 468 209 M400 110 C 440 110, 430 65, 468 65 M400 140 C 440 140, 430 113, 468 113" class="f-none s-m w15" marker-end="url(#arr-m)"/>
 </svg></div><figcaption>The block table translates logical blocks to physical ones, like a page table. Block 3 is half full; a new block is allocated only when it fills.</figcaption></figure>
 <div data-w="paged"></div>
+<div data-w="kv3d"></div>
 <div class="grid2">
   <div class="box insight" data-t="Memory efficiency"><p><b>No external fragmentation.</b> Internal fragmentation only in the <b>last block</b> of each sequence: fewer wasted tokens than one block. With sequences of 100s–1000s of tokens and blocks of 16 or 32, on average <b>under 4%</b> of the KV cache is wasted.</p></div>
   <div class="box exam" data-t="Serving many requests"><p>Request A ("Four score and seven years ago our fathers brought …") can occupy physical blocks 7, 1, 3 while request B ("It was the best of times") occupies 5 and 2, interleaved freely.</p></div>

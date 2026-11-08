@@ -43,7 +43,8 @@ CSO.register({
     </g>
   </g>
   <path d="M260 68 L 270 70" class="s-mut w1"/>
-</svg></div></figure>`
+</svg></div></figure>
+<div data-w="parallel3d"></div>`
     },
     {
       id: 'dp', title: 'Data-parallel training and synchronization',
@@ -93,6 +94,7 @@ CSO.register({
 <li><b>All-gather</b>: P − 1 more times, the finished chunks are passed around until everyone has all of them.</li>
 </ol>
 <div data-w="ring"></div>
+<div data-w="ring3d"></div>
 <div class="formula"><span class="fl">Data each process sends in ring all-reduce</span><div class="fm">\[ 2\,(P-1)\,\frac{N}{P} \;\approx\; 2N \]</div><span class="fn">Practically independent of the number of processes P.</span></div>
 <div class="box exam" data-t="So what limits data-parallel scaling?"><p>Not P, but <b>N</b>: the size of the model (gradients) that every process must send, about 2N per iteration.</p></div>`
     },

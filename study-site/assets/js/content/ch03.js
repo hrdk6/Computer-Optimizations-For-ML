@@ -95,6 +95,7 @@ CSO.register({
 <p>So <b>matrix multiplication is tiled to fit in cache</b>, and the <b>computation is ordered to maximise reuse</b> of whatever is already in cache. Split the filter matrix into tiles F₀₀, F₀₁, F₁₀, F₁₁ and the input matrix into I₀₀ … I₁₁; then each output tile is a sum of tile products:</p>
 <div class="formula"><span class="fl">2×2 tiled product</span><div class="fm">\[ O_{00} = F_{00}I_{00} + F_{01}I_{10},\quad O_{01} = F_{00}I_{01} + F_{01}I_{11},\quad O_{10} = F_{10}I_{00} + F_{11}I_{10},\quad O_{11} = F_{10}I_{01} + F_{11}I_{11} \]</div><span class="fn">After computing F₀₀I₀₀, do F₀₀I₀₁ next (F₀₀ is still in cache) or F₁₀I₀₀ (I₀₀ is still in cache).</span></div>
 <div data-w="tiling"></div>
+<div data-w="gemm3d"></div>
 <p>Production libraries do exactly this. <b>GEMM</b> (generalised matrix multiplication) libraries such as <b>OpenBLAS</b> and <b>Intel MKL</b> on CPUs and <b>cuBLAS</b> and <b>cuDNN</b> on GPUs <b>look at the shape of the multiplication and pick an implementation optimised for that shape</b>, tiling it to the machine's storage hierarchy (L1, L2, maybe L3, each with different sizes).</p>
 <div class="box exam"><p>Tiling does not change the result, only the order of operations and therefore the memory traffic. "Optimization usually involves proper tiling to the storage hierarchy."</p></div>`
     },

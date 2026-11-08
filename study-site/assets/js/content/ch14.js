@@ -10,7 +10,8 @@ CSO.register({
       html: String.raw`
 <p>In-memory computing (IMC) does arithmetic inside the memory array, so weights never travel to and from off-chip memory. It is analog: using current (resistive) or charge (capacitive). The course's example is <b>ReRAM (RRAM)</b>, a non-volatile memory that stores a value by changing the resistance of a special dielectric; it belongs to the memristor family.</p>
 <div class="formula"><span class="fl">Crossbar dot product</span><div class="fm">\[ I_{\text{cell}} = V \cdot G \;\;(\text{Ohm, } G = 1/R), \qquad I_{\text{bitline}} = \sum_i V_i\, G_i \;\;(\text{Kirchhoff}) \]</div><span class="fn">Weights are conductances, inputs are wordline voltages; each bitline current is a dot product, so the whole crossbar is a vector–matrix multiplier. Columns then go through sample-and-hold, an ADC, and shift-and-add.</span></div>
-<div data-w="crossbar"></div>`
+<div data-w="crossbar"></div>
+<div data-w="crossbar3d"></div>`
     },
     {
       id: 'isaac', title: 'ISAAC: in-situ analog arithmetic',

@@ -67,6 +67,7 @@ CSO.register({
 </ul>
 <div class="formula"><span class="fl">Latency of an N×N systolic matmul</span><div class="fm">\[ T = 3N - 2 \text{ cycles} \qquad (N = 4 \Rightarrow 10) \]</div></div>
 <div data-w="systolic" data-o='{"N":4}'></div>
+<div data-w="systolic3d" data-o='{"N":4}'></div>
 <div class="box insight" data-t="Why systolic arrays are everywhere"><p><b>Seamless pipelining</b>: the next multiplication (D = E × F) can stream in right behind the current one, so the array never sits idle. This is the basis of the TPU and of recent NPUs from AMD, Qualcomm and Intel.</p></div>`
     },
     {

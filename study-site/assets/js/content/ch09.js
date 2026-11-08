@@ -96,6 +96,7 @@ CSO.register({
   <path d="M300 75h100" class="s-mut w15" marker-end="url(#arr-mut)"/>
 </svg></div><figcaption>Each softmax row sums to 1. Each output row captures a word's meaning (embedding), its position (PE) and its interaction with every other word.</figcaption></figure>
 <div data-w="attention"></div>
+<div data-w="attn3d"></div>
 <div class="grid2">
   <div class="box exam" data-t="Properties to remember"><ul><li><b>Permutation invariant</b>: shuffling words permutes rows and columns but does not change the values (positional encoding is what breaks the tie).</li><li><b>No parameters</b> in self-attention itself.</li><li>Values on the <b>diagonal are usually highest</b>.</li><li>Setting a score to <b>−∞</b> prevents two words interacting, because e<sup>−∞</sup> = 0 after softmax.</li></ul></div>
   <div class="box insight"><p>Self-attention existed before the transformer. The transformer's contribution was <b>multi-head</b> attention, next.</p></div>

@@ -172,6 +172,7 @@ CSO.register({
 <tr><td><b>U</b></td><td>Convolution stride</td></tr>
 </tbody></table></div>
 <div class="formula"><span class="fl">The convolution layer (Sze et al. notation)</span><div class="fm">\[ O[n][m][x][y] = \mathrm{Act}\!\left( B[m] + \sum_{i=0}^{R-1}\sum_{j=0}^{S-1}\sum_{k=0}^{C-1} I[n][k][Ux+i][Uy+j]\times W[m][k][i][j] \right) \]</div><span class="fn">0 ≤ n &lt; N, 0 ≤ m &lt; M, 0 ≤ x &lt; F, 0 ≤ y &lt; E. O = output fmaps, I = input fmaps, W = filter weights, B = biases. The terms Ux + i and Uy + j implement the stride.</span></div>
+<div data-w="conv3d"></div>
 <div class="box exam"><ul><li>Filter channels = input channels (C). Output channels = number of filters (M).</li><li>MACs for one layer = N · M · E · F · C · R · S. Weights = M · C · R · S (+ M biases).</li><li>The arithmetic is only multiply and add, but its structure (strides, channels, filters, batch) is what makes it hard to run efficiently.</li></ul></div>`
     }
   ],
